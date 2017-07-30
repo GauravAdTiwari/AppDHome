@@ -12,6 +12,13 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+			html *
+{
+   
+   font-family: Comfortaa !important;
+}
+		</style>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -40,7 +47,31 @@
 								There are no hoverboards,<br><br>
 							 or flying cars, Just apps <br><br>lots of mother flipping apps</h3>
 						</header>
-						<span class="image"><img src="images/kerstin.gif" alt="" /></span>
+						<span class="image">
+							<img class="mySlides" src="images/kerstin.gif" alt="" />
+							<img class="mySlides" src="images/and.gif" alt="" />
+							<img class="mySlides" src="images/kerstin1.gif" alt="" />
+							<img class="mySlides" src="images/c_kerstin.gif" alt="" />
+							<img class="mySlides" src="images/juicebox.gif" alt="" />
+							<img class="mySlides" src="images/digital.gif" alt="" />
+							<img class="mySlides" src="images/david.gif" alt="" />
+							<img class="mySlides" src="images/pago.gif" alt="" />
+						</span>
+						<script>
+							var myIndex = 0;
+							carousel();
+							function carousel() {
+    							var i;
+							    var x = document.getElementsByClassName("mySlides");
+							    for (i = 0; i < x.length; i++) {
+							       x[i].style.display = "none";  
+							    }
+							    myIndex++;
+							    if (myIndex > x.length) {myIndex = 1}    
+							    x[myIndex-1].style.display = "block";  
+							    setTimeout(carousel, 4000); // Change image every 2 seconds
+							}
+						</script>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
@@ -53,8 +84,8 @@
 							<div class="row">
 								<div class="4u 12u$(medium)" id = "About">
 									<header>
-										<h2>App Development Wing GeekHaven</h2>
-										<h3>Android, the world's most popular mobile platform</h3>
+										<h2 style="font: bold 30px/40px Comfortaa">App Development Wing GeekHaven</h2>
+										<h3 style="font: 25px/35px Comfortaa">Android, the world's most popular mobile platform</h3>
 									</header>
 								</div>
 								<div class="4u 12u$(medium)">
@@ -63,7 +94,7 @@
 Android gives you a world-class platform for creating apps and games for Android users everywhere, as well as an open marketplace for distributing to them instantly.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<h3>The mobile market is on the rise. Our goal is to engage students of IIITA in the mobile development process.</p>
+									<h3 style="font: 25px/35px Comfortaa">The mobile market is on the rise. Our goal is to engage students of IIITA in the mobile development process.</h3>
 								</div>
 							</div>
 						</div>
@@ -76,12 +107,12 @@ Android gives you a world-class platform for creating apps and games for Android
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Effervescence App</h2>
+							<h2 style="font: bold 30px/0px Comfortaa">Effervescence App</h2>
 							<br>
 							<p>Effervescence is the annual Cultural festival of Indian Institute of Information Technology - Allahabad
 Experience the Carnival and stay updated with this Official App.</p>
 						</header>
-						<p>Experience the Carnival and stay updated with this Official App. <h3>App Features:</h3>
+						<p>Experience the Carnival and stay updated with this Official App. <h3 >App Features:</h3>
 <ul style="list-style-type:square">
   <li>Events by Day and Categories</li>
   <li>Always get the latest info on the fly without updating the app.</li>
@@ -100,7 +131,7 @@ Experience the Carnival and stay updated with this Official App.</p>
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>IIIT-A News Feed App</h2>
+							<h2 style="font: bold 30px/0px Comfortaa">IIIT-A News Feed App</h2>
 							<br>
 							<p>The Official Upcoming App to constantly update all IIITians with the current and forthcoming events in the college. </p>
 						</header>
